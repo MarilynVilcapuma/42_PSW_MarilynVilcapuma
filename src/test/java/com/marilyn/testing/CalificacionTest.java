@@ -108,17 +108,6 @@ public class CalificacionTest {
 
     // ==========================================================
     // RETO: octavo caso de prueba
-    //
-    // Justificacion:
-    // Los casos 1 al 7 prueban cada metodo por separado y siempre con
-    // promedios "redondos". El caso 8 encadena los dos metodos: calcula el
-    // promedio de 12, 13 y 14 y usa ese resultado como entrada de
-    // estaAprobado(). Aporta dos cosas que ningun caso anterior cubre:
-    //
-    //   a) Verifica que ambos metodos funcionan juntos, no solo aislados.
-    //   b) Llega al limite de 13 a traves de una division real (39 / 3) y no
-    //      con un valor escrito a mano, que es como ocurre en el uso real de
-    //      la clase.
     // ==========================================================
 
     @Test
