@@ -32,7 +32,7 @@ Implementados en [DescuentoTest.java](src/test/java/com/marilyn/testing/Descuent
 | 2 | 200 | 20% | 160 | Cambia precio y descuento a la vez, para confirmar que el resultado no dependía de los números del caso anterior |
 | 3 | 50 | 0% | 50 | Un producto sin promoción debe conservar su precio: el método no debe alterar nada cuando no hay descuento |
 | 4 | 500 | 50% | 250 | Resultado fácil de verificar mentalmente (la mitad), sirve como control de que el cálculo es correcto |
-| 5 | 300 | 100% | 0 | **Caso propio.** Ver la justificación abajo |
+| 5 | 300 | 100% | 0 | **Caso propio.**|
 
 ---
 
@@ -76,7 +76,8 @@ src/
 │   └── Main.java
 └── test/java/com/marilyn/testing/
     ├── CalificacionTest.java  8 casos de prueba
-    └── DescuentoTest.java     5 casos de prueba
+    ├── DescuentoTest.java     5 casos de prueba
+    └── ProductoTest.java      1 caso de prueba
 ```
 
 ## Ejecución de las pruebas
@@ -93,9 +94,9 @@ Solo las pruebas de descuentos:
 mvn test -Dtest=DescuentoTest
 ```
 
-Resultado obtenido:
+Resultado obtenido con `mvn test`:
 
 ```
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
 BUILD SUCCESS
 ```
